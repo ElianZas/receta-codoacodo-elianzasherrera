@@ -1,0 +1,66 @@
+.menu-nav.desktop{
+    display:none;
+}
+.logo{
+    width:25%;
+    padding-top: 2%;
+}
+.contenedor-menu{
+    display:flex;
+    justify-content: space-between;
+    padding:2% 4% 0% 4%;
+    background-color:#f9f9f9;
+    align-items: center;
+    height:3rem;
+}
+.contenedor-main-receta{
+    display:grid;
+    padding: 1rem;
+    gap:1rem;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.contenedor-main-descripcion{
+    display:flex;
+    flex-direction: column;
+    row-gap:1rem;
+    align-items: flex-start;
+}
+.btn-main-receta{
+    background-color: #E29933;
+    padding:1rem 1.5rem 1rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-main-receta.desktop{
+    display:none;
+}
+.btn-main-receta.mobile{
+    margin:0rem 4rem 0rem 4rem;
+}
+.img-main{
+    width: 100%;
+    height:400px;
+    object-fit:cover;
+    object-position: -15px 0px;
+}
+.contenedor-superdeliciosas{
+    padding:1rem;
+}
+.galeria-recetas-deliciosas{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.receta{
+    flex-grow:0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height:50vw;
+    overflow:hidden;
+}
+.img-tarta-manzana{
+    width: 100%;
+    height:300px;
+    object-position: 0px -120px;
+}

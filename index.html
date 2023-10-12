@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="contenedor-menu">
+        <img class="logo" src="./images/logo.png" alt="">
+        <nav class="menu-nav desktop">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
+                </div>
+            </ul>
+        </nav>
+        <nav class="menu-nav mobile">
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor-main-receta">
+        <div class="contenedor-main-descripcion">
+            <h1>Recetario Delicioso</h1>
+            <h2>Tu Rincón Gastronómico</h2>
+            <p>Nuestra página es el lugar perfecto para amantes de la cocina de todos los niveles, con consejos culinarios, recetas populares y la promesa de sabores excepcionales en cada plato. Únete a nuestra comunidad y convierte la cocina en tu forma de expresión artística.</p>
+            <h3>¡Bienvenido a la experiencia culinaria definitiva!</h3>
+            <button class="btn-main-receta desktop">Receta del Día</button>
+        </div>
+        <img class="img-main" src="./images/main-img.png" alt="">
+        <button class="btn-main-receta mobile">RECETA DEL DÍA</button>
+    </main>
+    <section class="contenedor-superdeliciosas">
+        <h2>Recetas SuperDeliciosas</h2>
+        <div class="galeria-recetas-deliciosas">
+            <article class="tarta-manzana receta">
+                <img class="img-tarta-manzana" src="./images/arreglo-pasteleria-manzanas-alto-angulo.jpg" alt="">
+            </article>
+            <article class="otra receta">
+                <img class="img-tarta-manzana" src="./images/arreglo-pasteleria-manzanas-alto-angulo.jpg" alt="">
+            </article>
+            <article class="una receta">
+                <img class="img-tarta-manzana" src="./images/arreglo-pasteleria-manzanas-alto-angulo.jpg" alt="">
+            </article>
+        </div>
+    </section>
+    <section class="contenedor-form">
+        <h4>¿Qué otra receta te gustaría que subamos?</h4>
+        <form action="" method="POST">
+            <label for="nombre">Nombre de la Receta:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="entradas">Entradas</option>
+                <option value="platos_principales">Platos Principales</option>
+                <option value="postres">Postres</option>
+                <option value="vegetarianas">Vegetarianas</option>
+            </select>
+            <label for="porciones">Porciones:</label>
+            <input type="number" id="porciones" name="porciones" required>
+            <label for="dificultad">Dificultad:</label>
+            <input type="radio" id="op1" name="facil" value="facil" />
+            <label for="op1">Fácil</label>
+            <input type="radio" id="op1" name="facil" value="facil" />
+            <label for="op1">Intermedia</label>
+            <input type="radio" id="op1" name="facil" value="facil" />
+            <label for="op1">Difícil</label>
+            <label for="newsletter">Suscríbete a nuestro Newsletter</label>
+            <input type="checkbox" name="newsletter" id="newsletter" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    
+</body>
+</html>
