@@ -5,41 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receta</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/big-dazzle" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="contenedor-menu">
-        <img class="logo" src="./images/logo.png" alt="">
-        <nav class="menu-nav desktop">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                        <path d="M21 21l-6 -6" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                    </svg>
-                </div>
-            </ul>
-        </nav>
+    <header class="header-menu">
+        <div class="contenedor-menu">
+            <img class="logo" src="./images/logo.png" alt="">
+            <nav class="menu-nav desktop">
+                <ul class="nav-items-desktop">
+                    <a href="#" target="_blank"><li class="nav-item">Home</li></a>
+                    <a href="#" target="_blank"><li class="nav-item">Recetas</li></a>
+                    <a href="#" target="_blank"><li class="nav-item">Nosotros</li></a>
+                    <a href="#" target="_blank"><li class="nav-item">Contacto</li></a>
+                    <li>
+                        <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg  class="icon-user" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-nav-icono mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                </svg>
+            </nav>
+        </div>
         <nav class="menu-nav mobile">
-            <ul>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M4 6l16 0" />
-                        <path d="M4 12l16 0" />
-                        <path d="M4 18l16 0" />
-                    </svg>
-                </li>
+            <ul class="nav-items-mobile">
+                <a href="#" target="_blank"><li class="nav-item">Home</li></a>
+                <a href="#" target="_blank"><li class="nav-item">Recetas</li></a>
+                <a href="#" target="_blank"><li class="nav-item">Nosotros</li></a>
+                <a href="#" target="_blank"><li class="nav-item">Contacto</li></a>
             </ul>
         </nav>
     </header>
@@ -55,22 +65,25 @@
         <button class="btn-main-receta mobile">RECETA DEL DÍA</button>
     </main>
     <section class="contenedor-superdeliciosas">
-        <h2>Recetas SuperDeliciosas</h2>
+        <h2>Recetas <span>SuperDeliciosas</span></h2>
         <div class="galeria-recetas-deliciosas">
             <article class="tarta-manzana receta">
-                <img class="img-tarta-manzana" src="./images/arreglo-pasteleria-manzanas-alto-angulo.jpg" alt="">
+                <h3>Tarta de Manzana</h3>
+                <a href="./pages/receta-tarta-manzana.html" target="_self"> <img class="img-tarta-manzana img-receta" src="./images/arreglo-pasteleria-manzanas-alto-angulo.jpg" alt="tarta de manzana imagen"></a>
             </article>
-            <article class="otra receta">
-                <img class="img-tarta-manzana" src="./images/arreglo-pasteleria-manzanas-alto-angulo.jpg" alt="">
+            <article class="pollo-papa receta">
+                <h3>Pollo al Horno con Papas</h3>
+                <a href="./pages/receta-pollo.html" target="_self"><img class="img-pollo img-receta" src="./images/pexels-photo-12842989.jpeg" alt="pollo al horno imagen"></a>
             </article>
-            <article class="una receta">
-                <img class="img-tarta-manzana" src="./images/arreglo-pasteleria-manzanas-alto-angulo.jpg" alt="">
+            <article class="galletita-vaini receta">
+                <h3>Galletitas de Vainilla con Chips</h3>
+                <a href="./pages/receta-galletachips.html" target="_self"><img class="img-galleta img-receta" src="./images/pexels-photo-2377472.jpeg" alt="galletas en un plato con chips de chocolate imagen"></a>
             </article>
         </div>
     </section>
     <section class="contenedor-form">
         <h4>¿Qué otra receta te gustaría que subamos?</h4>
-        <form action="" method="POST">
+        <form class="formulario" action="" method="POST">
             <label for="nombre">Nombre de la Receta:</label>
             <input type="text" id="nombre" name="nombre" required>
             <label for="categoria">Categoría:</label>
@@ -85,16 +98,42 @@
             <label for="dificultad">Dificultad:</label>
             <input type="radio" id="op1" name="facil" value="facil" />
             <label for="op1">Fácil</label>
-            <input type="radio" id="op1" name="facil" value="facil" />
-            <label for="op1">Intermedia</label>
-            <input type="radio" id="op1" name="facil" value="facil" />
-            <label for="op1">Difícil</label>
-            <label for="newsletter">Suscríbete a nuestro Newsletter</label>
-            <input type="checkbox" name="newsletter" id="newsletter" required>
-            <input type="submit" value="Enviar">
+            <input type="radio" id="op2" name="facil" value="facil" />
+            <label for="op2">Intermedia</label>
+            <input type="radio" id="op3" name="facil" value="facil" />
+            <label for="op3">Difícil</label>
+            <div class="newsletter-block">
+                <label for="newsletter">Suscríbete a nuestro Newsletter</label>
+                <input type="checkbox" name="newsletter" id="newsletter" required>
+            </div>
+            <input class="enviar" type="submit" value="Enviar">
         </form>
     </section>
-
-    
+    <aside class="redes-aside">
+        <h4>¡Descubrí más en nuestras Redes Sociales!</h4>
+        <div class="contenedor-redes">
+            <a href="#" target="_blank">
+                <svg class="instagram" alt="instagram" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <svg class="facebook" alt="facebook" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <svg class="twitter" alt="twitter" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+            </a>
+        </div>
+    </aside>
+    <footer>Derechos reservados a Elian Zás Herrera &copy;</footer>
 </body>
 </html>

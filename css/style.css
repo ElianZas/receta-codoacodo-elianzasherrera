@@ -1,3 +1,23 @@
+:root{
+    --font-family-big-dazzle: 'BIG-DAZZLE', sans-serif;  
+    --font-family-poppins: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: var(--font-family-poppins);
+    font-size: .8rem;
+    line-height: 1rem;
+}
+button{
+    font-family: var(--font-family-poppins);
+    font-weight: 600;
+}
+
+.enviar{
+    background:none;
+    border-style: none;
+}
+
 .menu-nav.desktop{
     display:none;
 }
@@ -8,10 +28,36 @@
 .contenedor-menu{
     display:flex;
     justify-content: space-between;
-    padding:2% 4% 0% 4%;
-    background-color:#f9f9f9;
+    padding:2% 4% 1% 4%;
+    background-color: rgb(255, 212, 162);
     align-items: center;
     height:3rem;
+}
+
+.nav-items-mobile{
+    display:flex;
+    flex-direction: column;
+    row-gap:.2rem;
+}
+.nav-items-mobile .nav-item{
+    padding:1rem;
+    text-align: center;
+    background-color: rgb(255, 212, 162);
+}
+
+.contenedor-main-descripcion h1{
+    font-family: var(--font-family-big-dazzle);
+    font-size: 3rem;
+}
+.contenedor-main-descripcion h2{
+    font-family: var(--font-family-poppins);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contenedor-main-descripcion h3{
+    font-family: var(--font-family-big-dazzle);
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
 }
 .contenedor-main-receta{
     display:grid;
@@ -21,9 +67,10 @@
 }
 .contenedor-main-descripcion{
     display:flex;
+    text-align: center;
     flex-direction: column;
     row-gap:1rem;
-    align-items: flex-start;
+    align-items: center;
 }
 .btn-main-receta{
     background-color: #E29933;
@@ -45,11 +92,23 @@
 }
 .contenedor-superdeliciosas{
     padding:1rem;
+    text-align: center;
+}
+.contenedor-superdeliciosas h2{
+    margin-bottom: 1rem;
+    font-family: var(--font-family-poppins);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+.contenedor-superdeliciosas h2 span{
+    font-weight: bold;
+    display:block;
 }
 .galeria-recetas-deliciosas{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    column-gap:1rem;
     -webkit-overflow-scrolling: touch;
 }
 .receta{
@@ -57,10 +116,238 @@
     flex-shrink: 0;
     flex-basis: auto;
     height:50vw;
+    text-align: center;
     overflow:hidden;
+    font-family: var(--font-family-poppins);
+    font-weight: bold;
 }
-.img-tarta-manzana{
-    width: 100%;
+.receta h3{
+    margin-top: .5rem;
+    margin-bottom:.5rem;
+}
+.img-receta{
+    width:14rem;
     height:300px;
     object-position: 0px -120px;
+}
+.img-tarta-manzana{
+    object-fit: cover;
+}
+.img-pollo{
+    width: 14rem;
+    height: 194px;
+    object-position: -22px -25px;
+    object-fit: cover;
+}
+.img-galleta{
+    width: 14rem;
+    height: 259px;
+    object-position: -67px -84px;
+    object-fit: cover;
+}
+.contenedor-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:1rem;
+    font-size: .9rem;
+    font-family: var(--font-family-poppins);
+}
+.contenedor-form h4, .redes-aside h4{
+    font-family: var(--font-family-poppins);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: medium;
+}
+.formulario{
+    width:16rem;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap:.5rem;
+}
+.enviar{
+    margin-top:1rem;
+    width:10rem;
+    align-self:center;
+    background-color: #f1b07a;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 2rem;
+}
+.redes-aside{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:1rem;
+    padding:1rem;
+}
+.facebook, .instagram, .twitter{
+    margin-right:1rem;
+}
+.facebook{
+    color:#f9f9f9;
+    background-color: #1877f2;
+    border-radius: 15px;
+    padding:.5rem;
+}
+.instagram{
+    color:#f9f9f9;
+    background-color: #D43089;
+    border-radius: 15px;
+    padding:.5rem;
+}
+.twitter{
+    background-color: #1DA1F2;
+    color:#f9f9f9;
+    border-radius: 15px;
+    padding:.5rem;
+}
+.twitter:hover, .instagram:hover, .facebook:hover, .twitter:active, .instagram:active, .facebook:active{
+    background-color:#E29933;
+}
+
+footer{
+    background-color: #121212;
+    padding:1rem;
+    color:#f9f9f9;
+    text-align: center;
+}
+
+@media (min-width:1200px) {
+    .contenedor-menu{
+        display:flex;
+        justify-content:space-between;
+        height:2rem;
+    }
+    .icon-search, .icon-user{
+        width:60%;
+    }
+    .contenedor-main-receta{
+        padding: 2rem;
+    }
+    .contenedor-main-descripcion{
+        display:flex;
+        text-align: left;
+        flex-direction: column;
+        row-gap:1rem;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .btn-main-receta.desktop{
+        display:block;
+    }
+
+    .logo{
+        width:10%;
+        padding-top:0%;
+    }
+    .menu-nav.desktop{
+        display:flex;
+    }
+    .nav-items-desktop{
+        display:flex;
+        align-items: center;
+        column-gap:4rem;
+    }
+    .mobile{
+        display:none;
+    }
+    .contenedor-superdeliciosas{
+        text-align: left;
+    }
+    .contenedor-superdeliciosas h2 span{
+        display:inline;
+    }
+    .galeria-recetas-deliciosas{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        justify-items: start;
+        gap:10rem;
+    }
+    .receta{
+        height:100%;
+        text-align: center;
+    }
+    .receta h3{
+        margin-top: .5rem;
+        margin-bottom:.5rem;
+    }
+    .img-receta{
+        object-position: 0px 0px;
+    }
+    .img-tarta-manzana{
+        width: 20rem;
+        height: 100%;
+        object-position: 0px 0px;
+        object-fit: cover;
+    }
+    .img-pollo{
+        width: 20rem;
+        height: 100%;
+        object-position: -100px 0px;
+        object-fit: cover;
+    }
+    .img-galleta{
+        width: 20rem;
+        height: 100%;
+        object-position: -100px 0px;
+        object-fit: cover;
+    }
+    .contenedor-form{
+        padding:1rem;
+        align-items: flex-start;
+    }
+    .formulario{
+        text-align: left;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap:1rem;
+    }
+    
+}
+
+
+
+/*Tarta-manzana*/
+.contenedor-tarta, .instrucciones-tarta{
+    font-family: var(--font-family-poppins);
+    padding:2rem;
+}
+.contenedor-tarta h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.contenedor-tarta{
+    display:flex;
+    flex-direction: column;
+    row-gap:2rem;
+    background-color: antiquewhite;
+}
+.instrucciones-tarta{
+    display:flex;
+    flex-direction: column;
+    row-gap:2rem;
+}
+.instrucciones-tarta h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pasouno h4, .pasocuatro h4, .pasodos h4, .pasosiete h4, .pasoseis h4, .pasotres h4, .pasocinco h4{
+    display:block;
+    background-color: antiquewhite;
+    padding:1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: medium;
+}
+.pasouno p, .pasocuatro p, .pasodos p, .pasosiete p, .pasoseis p, .pasotres p, .pasocinco p{
+    font-size: 1rem;
+    padding-top:1rem;
+}
+
+.pasouno img, .pasocuatro img, .pasodos img, .pasosiete img, .pasoseis img, .pasotres img, .pasocinco img{
+    width:50%;
 }
